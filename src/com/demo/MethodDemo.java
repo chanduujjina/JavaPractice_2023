@@ -34,10 +34,10 @@ public class MethodDemo {
 		return c;
 	}
 	
-	public int add1(int ... num) {
+	public int add1(int ... numArray) {
 		int result=0;
-		for(int val:num) {
-			result=result+val;
+		for(int i=0;i<numArray.length;i++) {
+			result=result+numArray[i];
 		}
 		return result;
 	}
