@@ -2,7 +2,7 @@ package com.demo;
 
 import java.util.Objects;
 
-public class Employee {
+public class Employee implements Cloneable{
 	
 	@Override
 	public int hashCode() {
@@ -77,5 +77,9 @@ public class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", gender=" + gender + ", salary=" + salary + ", deptName="
 				+ deptName + "]";
+	}
+	
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
 	}
 }
