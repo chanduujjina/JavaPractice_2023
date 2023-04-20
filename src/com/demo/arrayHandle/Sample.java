@@ -1,7 +1,34 @@
 package com.demo.arrayHandle;
 
-public class Sample {
+import java.util.Objects;
+
+public class Sample implements Cloneable {
 	
+	@Override
+	public int hashCode() {
+		return Objects.hash(sampleId, sampleName);
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Sample other = (Sample) obj;
+		return sampleId == other.sampleId && Objects.equals(sampleName, other.sampleName);
+	}
+	
+	@Override
+	 public  Object clone() throws CloneNotSupportedException {
+		return super.clone();
+		 
+	 }
+
+
 	@Override
 	public String toString() {
 		return "Sample [sampleId=" + sampleId + ", sampleName=" + sampleName + "]";
