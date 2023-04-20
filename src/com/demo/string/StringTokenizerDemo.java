@@ -12,6 +12,19 @@ public class StringTokenizerDemo {
 			String nextToken = stringTokenizer.nextToken();
 			System.out.println(nextToken);
 		}
+		
+		String envInfo = "local/dev/qa/preprod/prod";
+		
+		StringTokenizer stringTokenizer1 = new StringTokenizer(envInfo,"/");
+		
+		
+		while(stringTokenizer1.hasMoreTokens()) {
+			
+			String val = stringTokenizer1.nextToken();
+			System.out.println(val);
+		}
+		
+		
 
 	}
 
