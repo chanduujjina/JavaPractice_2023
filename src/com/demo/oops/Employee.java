@@ -5,20 +5,23 @@ public class Employee {
 	public Employee() {
 		
 	}
-	
+	//4 paremetrs
 	public Employee(int eid,String eName,String gender,String dept) {
-		this(eid,eName);
+		this(eid,gender);
 		this.eid=eid;
 		this.eName=eName;
 		this.gender=gender;
 		this.dept=dept;
+		
 	}
 	
-	
-	public Employee(int eid,String eName) {
+	//2 parametorized constrcor
+	public Employee(int eid,String gender) {
 		this.eid=eid;
 		this.eName=eName;
 	}
+	
+	
 	
 	
    @Override
