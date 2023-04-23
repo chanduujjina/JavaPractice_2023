@@ -32,6 +32,10 @@ public class EmployeeClient {
 		Employee e3 = new Employee(3,"Ramudu","male","it");
 		System.out.println(e3.toString());
 		
+		Employee e4 = new Employee(4,null,"male", null);
+		System.out.println(e4.toString());
+		
+		
 		
 	}
 
