@@ -11,6 +11,7 @@ public class EmployeeInhertance {
 		emp.setEmpName("ABCD");
 		emp.setPayRoleName("Verizon");
 		emp.setGender("Male");
+		System.out.println(emp.getEmpName());
 		System.out.println(emp);
 	}
 
