@@ -1,4 +1,6 @@
-package com.demo.oops.inheritance;
+package com.demo.oops.inheritance.demo;
+
+import com.demo.oops.inheritance.ContractEmployee;
 
 public class EmployeeInhertance {
 	
