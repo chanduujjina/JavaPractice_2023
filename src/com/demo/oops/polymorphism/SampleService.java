@@ -16,6 +16,14 @@ public class SampleService {
 		return a+b;
 	}
 	
+	public int m1(String a,int b) {
+		return Integer.parseInt(a)+b;
+	}
+	
+	public int m1(int a,String b) {
+		return a+Integer.parseInt(b);
+	}
+	
 	public String getStringVal(int val) {
 		return String.valueOf(val);
 	}
