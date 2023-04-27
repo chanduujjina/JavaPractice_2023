@@ -1,4 +1,4 @@
-package com.demo.oops.polymorphism;
+package com.demo.oops.polymorphism.runtime;
 
 public class Redme extends BasicModelPhone{
 	

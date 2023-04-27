@@ -1,8 +1,8 @@
 package com.demo.oops.polymorphism.demo;
 
-import com.demo.oops.polymorphism.BasicModelPhone;
-import com.demo.oops.polymorphism.Lenovo;
-import com.demo.oops.polymorphism.Redme;
+import com.demo.oops.polymorphism.runtime.BasicModelPhone;
+import com.demo.oops.polymorphism.runtime.Lenovo;
+import com.demo.oops.polymorphism.runtime.Redme;
 
 public class MethodOverridingDemo2 {
 	
