@@ -34,22 +34,6 @@ public class MethodDemo {
 		return c;
 	}
 	
-	public int add1(int ... numArray) {
-		int result=0;
-		for(int i=0;i<numArray.length;i++) {
-			result=result+numArray[i];
-		}
-		return result;
-	}
-	
-	public String appendNames(String ...companyNames) {
-		String response= "";
-		for(int i=0;i<companyNames.length;i++) {
-			response=response+" "+companyNames[i];
-		}
-		return response;
-	}
-	
 	public void m3(MethodDemo methodDemo) {
 		methodDemo = null;
 	}
@@ -62,24 +46,19 @@ public class MethodDemo {
 	
 	public static void main(String[] args) {
 		MethodDemo methodDemo = new MethodDemo();
+
 		methodDemo.m1();//method call
 		
 		methodDemo.m2("Karthik");
 		int result = methodDemo.add(1, 2);
 		System.out.println(result);
+
 		
 		//methodDemo.m3(methodDemo);
 		//System.out.println(methodDemo.toString());
 		
 		methodDemo.m4(methodDemo);
 		System.out.println(methodDemo.toString());
-		
-		int result1 = methodDemo.add1(1,2,3,4,5,6);
-		System.out.println(result1);
-		
-		String appendNames = methodDemo.appendNames("TCS","Infosys","Incedo");
-		System.out.println(appendNames);
-		
 	}
 
 }
