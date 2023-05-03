@@ -52,9 +52,9 @@ public class AggregationDemo {
 			System.out.println(add.toString());
 		}
 		
-		System.out.println(student.getAddress());
+		//System.out.println(student.getAddress());
 		
-		System.out.println(student.getDepartment());
+		//System.out.println(student.getDepartment());
 		
 		
 	}
