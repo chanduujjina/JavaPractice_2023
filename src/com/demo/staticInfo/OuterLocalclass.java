@@ -2,12 +2,20 @@ package com.demo.staticInfo;
 
 public class OuterLocalclass {
 	
+	private  String name = "chandu";
+	
 	public void m1() {
 		
-		class Localclass {
+		class Localclass implements BaseInterface{
 			
 			public void m2() {
-				System.out.println("inside Localclass m2 method");
+				System.out.println("inside Localclass m2 method"+name);
+			}
+
+			@Override
+			public void m1() {
+				// TODO Auto-generated method stub
+				
 			}
 			
 			
@@ -18,6 +26,7 @@ public class OuterLocalclass {
 	}
 	
 	public static void main(String[] args) {
+		
 		OuterLocalclass outerLocalclass = new  OuterLocalclass();
 		outerLocalclass.m1();
 		

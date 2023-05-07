@@ -10,6 +10,12 @@ public class OuerClassInner {
 		void m1() {
 			System.out.println("inside m1 name:"+name);
 		}
+		
+		void m2() {
+			System.out.println("inside m2 name:"+name);
+		}
+		
+		
 	}
 	
 	public String getName() {
