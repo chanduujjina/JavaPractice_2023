@@ -16,6 +16,8 @@ public final class CusttomImmutbale {
 	
 	private final int id;
 	
+	
+	//mutable reference in immutable object
 	private final StringBuffer stringBuffer;
 	
 	public CusttomImmutbale(String value, String type, int id,StringBuffer stringBuffer) {
